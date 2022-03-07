@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Rachel Whelen">
+		<title>Assignment 3</title>
+	</head>
+	<!--this is the body -->
+	<body>
+		<div id="wrapper" class="wrapper">	
+			<section id="html=forms" class="main-section">
+				<form action="somepage.php" method="get">
+					<!--This is 1 of 5 required elements -->
+					<div id="fn-container" class="form-elm">
+						<label for="firstname">First Name</label>
+						<input type="text" name="firstname" id="firstname" placeholder=" Enter First name here" required>
+					</div>
+					<!--This is 2 of 5 required elements -->
+					<div id="ln-container" class="form-elm">
+						<label for="lastname">Last Name</label>
+						<input type="text" name="lastname" id="lastname" placeholder="Enter Last Name Here" required>
+					</div>
+					<!--Here we have a read only example-->	
+					<div id="email-container" class="form=elm">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" value="example@gmail.com" readonly> 
+					</div>
+					<!--This is 3 of 5 required elements -->
+					<div id="pass=container" class="form-elm">
+						<label for="pass">Password</label>
+						<input type="password" name="pass" id="pass" required>
+					</div>
+					<!--Here we have a text area for you to spill your soul-->
+					<div id="it-container" class="form-elm">
+						<label for="introtext">Introductory Text</label>
+						<textarea name="introtext" id="introtext" placeholder=">enter intro text here">
+							Hello, This is the introductory Text. Write Something Here! You know you want to.
+						</textarea>
+					</div>
+					<!--This is 4 of 5 required elements -->
+					<div>
+						<label>Date of Birth</label>
+						<input type="date" name="dte" id="dte" required>
+					</div>
+					<!--This is 5 of 5 required elements -->
+					<div id="number-container" class="form-elm">
+						<label for="num">Mobile Number</label>
+						<input type="number" id="num" name="num" required>
+					</div>
+					<!--Here we have a radio option-->
+					<div id="radio-container" class="form=elm">
+						<p>Gender</p>
+						<label for="Female">
+						<input type="radio" name="gender" id="Female" value="female" checked>
+						Female
+						</label>
+						<label for="Male">
+						<input type="radio" name="gender" id="Male" value="male">
+						Male
+						</label>
+						<label for="NonBinary">
+						<input type="radio" name="gender" id="NonBinary" value="NonBinary">
+						Non Binary
+						</label>
+					</div>
+					<!-- All we hear is radio gaga radio googoo -->
+					<div id="address-container" class="form-elm">
+						<label for="address">Address</label>
+						<input type="text" name="address" id="address" placeholder="Enter Address Here">
+					</div>
+					<div id="city-container" class="form-elm">
+						<label for="city">City</label>
+						<input type="text" name="City" id="city" placeholder="Enter City Here">
+					</div>
+					<!-- This a section of provinces and territories -->
+					<div id="province-container" class="form-elm">
+						<label for="province"> Province</label>
+						<select name="province" id="province">
+							<optgroup label="Provinces">
+								<option value="Alberta">Alberta</option>
+								<option value="British_Columbia">British Columbia</option>
+								<option value="Manitoba">Manitoba</option>
+								<option value="New_Brunswick">New Brunswick</option>
+								<option value="Newfoundland_and_labrador">Newfoundland and Labrador</option>
+								<option value="nova_scotia">Nova Scotia</option>
+								<option value="Ontario">Ontario</option>
+								<option value="prince_edward_island">Prince Edward Island</option>
+								<option value="Quebec">Quebec</option>
+								<option value="Saskatchewan">Saskatchewan</option>
+							</optgroup>
+							<optgroup label="Territories">
+								<option value="northwest_territories">Northwest Territories</option>
+								<option value="Nunavut">Nunavut</option>
+								<option value="Yukon">Yukon</option>
+							</optgroup>
+						</select>
+					</div>
+					<!-- Did not add other real countries because the only option was Canadian Provinces -->
+					<div id="country-container" class="form-elm">
+						<label for="country">Country</label>
+						<select name="country" id="country">
+							<option value="canada">Canada</option>
+							<option value="canada_eh">Canada Eh</option>
+							<option value="library_land">Library Land</option>
+							<option value="Nerdfighteria">Nerdfighteria</option>
+						</select>
+					</div>
+					<div id="postalcode-container" class="form-elm">
+						<label for="postalcode">Postal Code</label>
+						<input type="text" name="postalcode" id="postalcode" placeholder="enter postal code here">	
+					</div>
+					<!-- Here we have some hobbies and interests in a checkbox format -->
+					<div id="hobbies-container" class="form-elm">
+						<h3>Hobbies & Interests</h3>
+						<label for="reading">Reading</label>
+						<input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
+
+						<label for="yoga">Yoga</label>
+						<input type="checkbox" name="hobbies" id="yoga" value="yoga"> <br>
+
+						<label for="sports">Sports</label>
+						<input type="checkbox" name="hobbies" id="sports" value="sports"> <br>
+
+						<label for="cooking">Cooking</label>
+						<input type="checkbox" name="hobbies" id="cooking" value="cooking"> <br>
+
+						<label for="films">Films</label>
+						<input type="checkbox" name="hobbies" id="films" value="films"> <br>
+
+						<label for="dinosaurs">Dinosaurs</label>
+						<input type="checkbox" name="hobbies" id="dinosaurs" value="dinosaurs"> <br>
+
+						<label for="JeffGoldblum">Jeff Goldblum</label>
+						<input type="checkbox" name="hobbies" id="JeffGoldblum" value="Jeff_Goldblum" checked> <br>
+					</div>
+					<!-- this is where you plug your website -->
+					<div id="website-container" class="form-elm">
+						<label for="ur">Website</label>
+						<input type="url" name="ur" id=ur>
+					</div>
+					<!--These are some buttons -->
+					<button type="submit">Submit</button>
+					<!-- Hit them is you dare -->
+					<button type="reset">Reset</button>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
