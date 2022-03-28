@@ -1,0 +1,187 @@
+@charset utf-8
+
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+image{
+	width:100%;
+
+
+}
+
+
+
+.clearfix:after {
+	content:;
+	 display:table;
+	 clear:both;
+}
+
+
+
+body {
+	background-image: url(../img/so-white.png);
+	max-width:960px;
+}
+
+.site-header{
+	background-color:#7cc576;
+	box-sizing:border-box;
+	padding:10px 25px;
+	width:960px;
+	height:230px;
+	position:relative;
+}	
+
+
+.site-header div img{
+	position:absolute;
+	left:25px;
+	top:10px;
+
+} 
+.site-header div h1{
+	position:absolute;
+	left:250px;
+	top:20px;
+
+}
+
+
+.nav li a {
+	background-color:#6dcff6; 
+	display:block;
+	padding:20px 10px;
+
+	width:100%;
+	text-align:center;
+	border-radius:5px;
+
+}
+
+.nav li {
+	float:left;
+	margin:5%;
+	width:15%;
+	box-sizing:border-box;
+	display:block;
+	padding:75px 0px;
+
+}
+
+.main {
+	width:80%;
+	
+}
+section {
+	float:left;
+	width:70%;
+	box-sizing:border-box;
+	
+}
+
+aside {
+	float:right;
+	width:20%;
+	box-sizing:border-box;
+
+	
+}
+
+
+
+.images{
+	float:left;
+	width:33%;
+	box-sizing: border-box;
+	padding:50px;
+	
+
+}
+
+
+.footer{
+	background-color:#7cc576;
+	width:960px;
+	height:110px;
+	clear:both;
+
+}
+
+.footer p{
+	float:left;
+	padding:30px 20px;
+	box-sizing:border-box;
+}
+	
+
+.social-media{
+	float:right;
+	padding:30px 20px;
+	border-style:border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
