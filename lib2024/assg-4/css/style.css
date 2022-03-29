@@ -49,7 +49,7 @@ table {
 	border-spacing: 0;
 }
 
-image{
+image {
 	width:100%;
 
 
@@ -65,12 +65,12 @@ image{
 
 
 
-body {
+.container {
 	background-image: url(../img/so-white.png);
 	max-width:960px;
 }
 
-.site-header{
+.site-header {
 	background-color:#7cc576;
 	box-sizing:border-box;
 	padding:10px 25px;
@@ -80,13 +80,13 @@ body {
 }	
 
 
-.site-header div img{
+.site-header div img {
 	position:absolute;
 	left:25px;
 	top:10px;
 
 } 
-.site-header div h1{
+.site-header div h1 {
 	position:absolute;
 	left:250px;
 	top:20px;
@@ -98,7 +98,6 @@ body {
 	background-color:#6dcff6; 
 	display:block;
 	padding:20px 10px;
-
 	width:100%;
 	text-align:center;
 	border-radius:5px;
@@ -116,18 +115,21 @@ body {
 }
 
 .main {
-	width:80%;
+	width:960px;
 	
 }
-section {
+.main-content {
 	float:left;
-	width:70%;
+	width:65%;
 	box-sizing:border-box;
+	margin-bottom:75px;
+	
 	
 }
 
-aside {
-	float:right;
+
+.site-sidebar {
+	float:left;
 	width:20%;
 	box-sizing:border-box;
 
@@ -135,15 +137,34 @@ aside {
 }
 
 
+}
+.site-sidebar h3 {
+	width:20%;
+	
+}
 
-.images{
-	float:left;
-	width:33%;
-	box-sizing: border-box;
-	padding:50px;
+.site-sidebar p {
+	float:right;
+
+	box-sizing:border-box;
+
 	
 
 }
+.image-gallery h3 {
+	clear:both;
+}
+
+.images {
+	float:left;
+	width:33%;
+	box-sizing: border-box;
+	padding:10px;
+	
+	
+
+}
+
 
 
 .footer{
