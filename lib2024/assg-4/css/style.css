@@ -120,6 +120,7 @@ image {
 	padding:0px 40px 0px;
 }
 /*here is styling for the image gallery*/
+
 .images{
 	float: left;
 	width: 33%;
@@ -128,6 +129,7 @@ image {
 	margin:0px 0px;
 	text-align:center;
 }
+
 /*here is the styling for the footer*/
 .footer{
 	background-color:#7cc576;
