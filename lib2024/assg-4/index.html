@@ -10,7 +10,7 @@
 	<body class="container"> 
 	<!-- the header starts here -->
 		<header class="site-header" id="site-header">
-			<div class="container clearfix">
+			<div class="container">
 				<img src="img/logo.png" class="logo" alt="cat logo">
 				<h1 class="title">Title of Page</h1>
 				<nav class=nav>
@@ -34,7 +34,7 @@
 		<!-- header ends here -->
 		<!-- this is the main section -->
         <main class="main clearfix" id="main">
-        	<article class="col-main site-content clearfix">
+        	<article class="col-main">
         		<section class="main-content" id=main-block>
 					<h2>Main Content</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -55,7 +55,7 @@
 			<!-- this is the side content -->
 			<aside class="site-sidebar clearfix" id="side">
 				<figure>
-					<div class="image-gallery-container clearfix">
+					<div class="image-gallery-container">
 						<img src="img/puppies1.jpg" alt="friends" width="280" height="205">
 					</div>
 				</figure>
@@ -64,32 +64,26 @@
 				</p>
 			</aside>
 			<!-- this is the end of the side content -->
-			<!-- here is the secondary content with the images -->
-			<section id=secondary-content class= image-gallery>
-				<h3>Secondary Content Title</h3>
-				<ul class="image-container clearfix">
-					<l1 class="images">
-						<figure>
-							<img src="img/puppy1.jpg" alt="Gallery Image 1" width="185" height="140">
-							<figcaption>Nose Boop</figcaption>
-						</figure>
-					</l1>
-					<l1 class="images">
-						<figure>
-							<img src="img/puppy2.jpg" alt="Gallery Image 2" width="185" height="140">
-							<figcaption>Sun Bathing</figcaption>
-						</figure>
-					</l1>
-					<l1 class="images">
-						<figure>
-							<img src="img/puppy3.jpg" alt="Gallery Image 3" width="185" height="140">
-							<figcaption>Who me?</figcaption>
-						</figure>
-					</l1>
-				</ul>
-			</section>
 		</main>
-		<!-- this is then end of the main section -->
+			<!-- here is the secondary content with the images -->
+		<section  class="image-gallery clearfix">
+			<h3>Secondary Content Title</h3>
+			<article clas="images clearfix">
+				<figure class="images clearfix">
+						<img src="img/puppy1.jpg" alt="Gallery Image 1" width="185" height="140">
+						<figcaption>Nose Boop</figcaption>
+				</figure>
+				<figure class="images clearfix">
+						<img src="img/puppy2.jpg" alt="Gallery Image 2" width="185" height="140">
+						<figcaption>Sun Bathing</figcaption>
+				</figure>				
+				<figure class="images clearfix">
+					<img src="img/puppy3.jpg" alt="Gallery Image 3" width="185" height="140">
+					<figcaption>Who me?</figcaption>
+				</figure>
+			</article>
+		</section>
+		<!-- this is then end of the section -->
 		<!-- this is the footer -->
 		<footer class="footer">
 			<p>Copyright &copy;2017 All Rights Reserved.
