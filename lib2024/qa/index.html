@@ -1,9 +1,260 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+<html lang="en-ca">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Rachel Whelen">
+		<title>QA</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
 
-</body>
+	<body>
+		<div>
+			<h1>LIB2024 Weekly:QA</h1>
+			<!-- Qus/Ans list begins -->
+			<ol>
+				<!-- Qus 1 -->
+				<li>
+					<p>
+						<strong> Qus: </strong>
+						What are three components of the web?
+					</p>
+					<p>
+						<strong>Ans: </strong>
+				 		HTML, CSS & Javascript
+					</p>
+				</li>
+				<!-- Qus 2 -->
+				<li>
+					<p>
+						<strong> Qus: </strong>
+						Define Control and give one example
+					</p>
+					<p>
+						<strong> Ans: </strong>
+						Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. An example is GitHub
+					</p>
+				</li>
+				<!-- Qus 3 -->
+				<li>
+					<p>
+						<strong> Qus: </strong>
+						What tag is used to create the title of a webpage? Give an example.
+					</p>
+					<p>
+						<strong> Ans: </strong>
+						&lt;title&gt; An example is &lt;title&gt;QA&lt;/title&gt;
+					</p>
+				</li>
+				<!-- Qus 4 -->
+				<li>
+					<p>
+						<strong> Qus: </strong>
+						What tag is used to create a paragraph in html? Give an example. 
+					</p>
+					<p>
+						<strong> Ans: </strong>
+						&lt;p&gt; An example is &lt;p&gt;paragraph&lt;/p&gt;
+					</p>
+				</li>
+				<!-- Qus 5 -->
+				<li>
+					<p>
+						<strong> Qus: </strong>
+						Identify the odd one out from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt; and state the reason. 
+					</p>
+					<p>
+						<strong> Ans: </strong>
+						&lt;span&gt;because it is an inline container.
+					</p>
+				</li>
+				<!-- Qus 6 -->
+				<li>
+					<p>
+						<strong> Qus: </strong>
+						What tags are required to create a navigation list html?
+					</p>
+					<p>
+						<strong> Ans: </strong>
+						&lt;nav&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;
+					</p>
+				 </li>
+				 <!-- Qus 7 -->
+				<li>
+					<p>
+						<strong> Qus: </strong>
+						What tags are used to create images? Name it's attributes.
+					</p>
+					<p>
+						<strong> Ans: </strong>
+						&lt;img&gt; its attributes are "alt, height, width and src"
+					</p>
+				</li>
+				<!-- Qus 8 -->
+				<li>
+					<p>
+						<strong> Qus: </strong>
+						Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;td&gt;
+					</p>
+					<p>
+						<strong> Ans: </strong>
+						&lt;b&gt;because it is used to make things bold and all the other tags relate to tables 
+					</p>
+				</li>
+				<!-- Qus 9 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>	
+						Give and example of colour picker input
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						 Hex code #FEFF33 or RGB 254, 255, 51
+					</p>
+				</li>
+				<!-- Qus 10 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						What is the use of the name and value attributes? Give two examples
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						The name attribute specifies a name for an HTML element. Examples &lt;button&gt; &lt;form&gt;
+						The value attribute specifies the intial value of the element. Examples &lt;button&gt; &lt;li&gt;
+					</p>
+				</li>
+				<!-- Qus 11 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						Give and example of an inline element
+					</p>
+					<p style="color:orange;">
+						<strong>Ans:</strong>
+					This is an example of inline style
+					</p>
+				</li>
+				<!-- Qus 12 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						How would you link an external style sheet? Give an example
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						You would add a link to it in your header. The following is an example:
+						&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+					</p>
+				</li>
+				<!-- Qus 13 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						Create CSS block to center an element with both horizontally and vertically that has position:absolute and has width:200px and height200px
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						.loader {
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							width: 200px ;
+							height: 200px ;
+						}
+					</p>
+				 </li>
+				 <!-- Qus 14 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						Create CSS keyframes block called "spin" that rotates an element
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						@keyframes spin {
+						100% {transform:rotate (360);}
+					}
+
+					</p>
+				</li>
+				<!-- Qus 15 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						Create CSS animation block to rotate an element that has the following properties Class "rotate me" & It rotates 5 times at intervals of o.5s with "linear" transition using animations keyframes "spin" 
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						.rotate-me {
+						animation spin .5s linear 5}
+
+						@keyframe spin {
+						100% {transform: rotate(360 deg);}
+					
+
+					</p>
+				</li>
+				<!-- Qus 16 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						How would you include create an alert with string "I love JavaScript" using Javascript?
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						&lt;script type="text/javascript"&gt; alert ("I love JavaScript")&lt;/script&gt;
+
+					<script type="text/javascript"> alert ("I love Javascript")</script>
+					</p>
+				</li>
+				<!-- Qus 17 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						How would you fade out of an element with id "fade-me" after a delay of 300ms using JQuery?
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						$("#fade-me").delay(300).fadeOut();
+				
+					</p>
+				</li>
+				<!-- Qus 18 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						How would you select all elements with class "my-class" using Javascript and Jquery
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						$(".my-class")
+					</p>
+				</li>
+				<!-- Qus 19 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						Give an example of input field that takes phone number with format "123-456-7890"?
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						&lt;input type="tel id="phone name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" &gt;
+						<input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+					</p>
+				</li>
+				<!-- Qus 20 -->
+				<li>
+					<p>
+						<strong>Qus:</strong>
+						Among HTML, CSS, Javascript, JQuery, what language did you like best?
+					</p>
+					<p>
+						<strong>Ans:</strong>
+						I like HTML best because it's the only one I fully undersand.
+					</p>
+				</li>
+			</ol>
+			<!-- the end of the list -->
+		</div>
+	</body>
 </html>
