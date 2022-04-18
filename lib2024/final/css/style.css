@@ -60,149 +60,125 @@ image {
 .main {
 	background-image: url(../img/fabric.webp);
 }
-
-
+/*here are my fonts and some colour styling*/
 h1{
 	font-family: 'minotaurphatte', sans-serif;
 	font-size:50px;
 	color: #72a9ae;
-	padding-left:50px;
-
-	
+	padding-left:60px;	
 }
 body {
 	font-family: 'Oswald', sans-serif;
 }
-
 h2, h4, th {
 	color: #72a9ae;
 }
-
+/*here is an animation on my logo*/
+.logo {
+	animation-name: myanimation;
+	animation-duration: 4s;
+}
+@keyframes myanimation {
+	0% {color: #72a9ae;}
+	25% {color: #ADD8E6;}
+	50% {color: #00008b;}
+	75% {color: #4f8657;}
+	100% {color: #72a9ae;}
+}
+/*here is the styling for the header*/
 .site-header {
 	background-color:#72a9ae;
 	box-sizing:border-box;
 	padding:1px;
 	width:100%;
 	height:50px;
-	
-	
-
-		
 }	
-
 .nav li a {
 	float:left;
 	width:10%;
 	box-sizing:border-box;
-	padding-left:10px;
-
-
+	padding-left:20px;
 }
-
-
 /*article in main*/
 .main-content {
 	float:left;
 	width:60%;
 	box-sizing:border-box;
-	padding:0px 50px;
-
+	padding:0px 50px 0px 60px;
 }
 /*aside in main*/
-
 .image {
 	float:left;
 	width:30%;
 	box-sizing:border-box;
 	padding-top: 50px;
 }
-
 .iheading {
-	padding-left:50px;
+	padding-left:60px;
 }
+/*here is the styling for the table*/
 .table {
-	
 	width: 90%;
 	box-sizing: border-box;
-	margin-left: 50px;
-	margin-right: 25px;
-	margin-top: 20px;
-	margin-bottom: 40px;
-
-
+	margin:auto;
 }
-
 table, th, td {
 	border: 1px solid black;
-	
-
 }
-
 th, td {
 	text-align:center;
 	padding:8px;
 }
-
 tr:nth-child(odd) {
 	background-color: #efefef;
 }
-
 th {
 	background-color:#ffffff;
 }
-
-.profile-head{
-
-	padding-left: 50px;
-
-	background-color: purple;
-}
-.form-profile{
-	
+/*here is the styling for the profile form*/
+.form-profile {
 	box-sizing: border-box;
 	float:left;
-	padding:25px;
+	padding:15px 35px 0px 35px;
+	margin-top: 50px;
 	margin-left:25px;
 	margin-right: 250px;
-	
-
+	position: relative;
 }
-
-
-
 .profile input[type="text"], select{
 	width:70%;
 	box-sizing: border-box;
 	display:inline-block;
 	float:right;
 	margin-top: 10px;
-
 }
-
 .profile select{
 	padding:3px;
 }
-
 .profile label {
 	display: inline-block;
 	width:30%;
 	box-sizing: border-box;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	
 	margin-bottom: 10px;
 	margin-left: 0px;
 }
-
 .profile [ type=submit]{
 	float:right;
 	margin-top: 10px;
+	box-sizing:border-box;}
+/*Some styling on the headers*/
+.side {
+	float:left;
+	display: inline;	
 }
-
-
-	
-
-
+ #inhead {
+ 	float:left;
+ 	display: inline;
+ 	position: absolute;
+}
+/*the styling of the profile info card */
 .card {
 	float:left;
 	background-color: #ffffff;
@@ -212,59 +188,60 @@ th {
 	margin-bottom:50px;
 	text-align: center;
 	padding-top: 25px;
+	transition-property: background, transform;
+	transition-duration: 1s, 5s;
+}
+/*here is a transition*/
+.card:hover{
+	background: grey;
+	transform: rotateY(360deg);
 }
  .card i {
  	color:#72a9ae;
- }
-
-
+}
+/*the styling of the footer*/
 .footer{
 	background-color:#454545;
 	box-sizing:border-box;
 	padding:1px;
 	width:100%;
 	height:260px;
-
 }
-
 .col {
 	float:left;
 	width:33%;
 	box-sizing:border-box;
 	text-align: center;
 	padding-top: 5px;
-
 }
-
-
-
-.footer nav li {
-
+.footer nav li a {
 	padding-bottom: 10px;
 	text-align: left;
-	padding-left: 140px;
-	color:#72a9ae;
-
 }
 
-.footer nav i {
+.footer nav a:first-child{
 	color:#3b5998;
 }
-
-
-.footer p {
-	
-	color:#72a9ae;
-	text-align: left;
-	padding-left: 190px;
+.footer nav a:nth-child(2n){
+	color:#FF0000;
 }
-
-@media (max-width: 960px) {
+.footer nav a:nth-child(3n){
+	color:#1DA1F2;
+}
+.footer p {
+	color:#3b5998;
+	text-align: left;
+	padding-left: 175px;
+}
+/*here is my media query*/
+@media only screen and  (max-width: 960px) {
 	.container {
 		display: block;
 	}
 
-	.main, .sidebar, .image, .table, .profile, .col .footer{
+	.site-header, .main, .sidebar, .image, .table, .profile, .col .footer{
 		width: 100%;
 	}
 }
+
+

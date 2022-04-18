@@ -4,15 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="author" content="Rachel Whelen">
 		<title>Final</title>
-		
-		
-		<!-- include font awesome style sheet -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
+	<!--here is my body -->
 	<body class="container">
-		<h1>MY LOGO</h1>
+		<h1 class="logo">MY LOGO</h1>
+		<!--here is my header-->
 		<header class="site-header" id="site-header">
 			<div class="container">
 				<nav class="nav">
@@ -37,6 +36,7 @@
 			</div>
 		</header>
 		<!--header ends here -->
+		<!--here is my main section -->
 		<main class="main clearfix" id="main">
 			<article class="col-main">
 				<section class="main-content" id="main-block">
@@ -59,13 +59,14 @@
 					tempor incididunt ut labore et dolore magna aliqua.</p> 
 				</section>
 			</article>
-		<!-- this is the end of the main paragraphs -->
+			<!-- this is the end of the main paragraphs -->
+			<!-- here is an image in an aside -->
 			<aside class="side-bar clearfix" id="side">
 				<div class="image">
 						<img src="img/bridge.jpg" alt="bridge" width="325" height="230">
 				</div>
 			</aside>
-		
+			<!-- here is the table -->
 			<article class="thetable clearfix" id="schedule" >
 				<h2 class="iheading">SCHEDULE</h2>
 				<section>
@@ -117,29 +118,30 @@
 					</table>
 				</section>
 			</article>
+			<!-- here is the edit profile section -->
 			<article class="profile clearfix" id="profile-info">
 				<section>
-					<h2 class="iheading">EDIT PROFILE</h2>
+					<h2 class="iheading" id="inhead">EDIT PROFILE</h2>
 					<form class="form-profile">
 						<!-- input name -->
 						<div id="name-container" class="profile">
 							<label for="name">Name:</label>
-							<input type="text" name="name" id="name" required> 
+							<input type="text" name="name" id="name" placeholder="Enter name here" required> 
 						</div>
 						<!-- input email -->
 						<div id="email-container" class="profile">
 							<label for="email">Email:</label>
-							<input type="text" name="email" id="email" required>
+							<input type="text" name="email" id="email" placeholder="Enter email here" required>
 						</div>
 						<!-- input address -->
 						<div id="address-container" class="profile">
 							<label for="address">Address:</label>
-							<input type="text" name="address" id="address" required>
+							<input type="text" name="address" id="address" placeholder="Enter address here" required>
 						</div>
 						<!-- input  city -->
 						<div id="city-container" class="profile">
 							<label for="city">City:</label>
-							<input type="text" name="city" id="city" required>
+							<input type="text" name="city" id="city" placeholder="Enter city here" required>
 						</div>
 						<!-- input province -->
 						<div id="province-container" class="profile">
@@ -168,14 +170,14 @@
 						<!-- input postal code -->
 						<div id="pc-container" class="profile">
 							<label for="postal-code">Postal Code:</label>
-							<input type="text" name="postal-code" id="postal-code" required>
+							<input type="text" name="postal-code" id="postal-code" placeholder="A0A 0A0" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
 						</div>
-
 						<button type="submit" name="button" id="button">SUBMIT</button>
 						</form>
-
 				</section>
-				<aside class="side">
+				<!-- here is the end of the edit profile-->
+				<!-- here is the beginning of profile info-->
+				<aside class="side clearfix">
 					<h2>PROFILE INFO</h2>
 					<div class="card">	
 						<i class="fas fa-user-circle fa-8x"></i>
@@ -188,6 +190,8 @@
 				</aside>
 			</article>
 		</main>
+		<!--end of main content-->
+		<!-- here is the footer-->
 		<footer class="footer">
 			<div class="col">
 				<h4>QUICK LINKS</h4>
