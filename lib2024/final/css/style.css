@@ -152,7 +152,7 @@ th {
 	float:right;
 	margin-top: 10px;
 }
-.profile select{
+.profile select,{
 	padding:3px;
 }
 .profile label {
