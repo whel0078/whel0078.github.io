@@ -178,6 +178,9 @@ th {
  	display: inline;
  	position: absolute;
 }
+button:hover {
+	background: #72a9ae;
+}
 /*the styling of the profile info card */
 .card {
 	float:left;
@@ -242,6 +245,13 @@ th {
 	.site-header, .main, .sidebar, .image, .table, .profile, .col .footer{
 		width: 100%;
 	}
+/*styling for the java*/
 }
-
-
+#results span, #results a {
+	opacity: 0;
+	transition: all 0.5s ease-out;
+	transition-delay: 1s;
+}
+#results.reveal span, #results.reveal a {
+	opacity: 1;
+}
